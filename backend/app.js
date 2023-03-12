@@ -12,7 +12,7 @@ app.use("/api/blog", blogRouter);
 
 mongoose
   .connect(
-    "mongodb+srv://admin:gitcode123@cluster0.mxunrep.mongodb.net/Blog?retryWrites=true&w=majority"
+    "mongodb+srv://admin:<your password>@cluster0.mxunrep.mongodb.net/Blog?retryWrites=true&w=majority"
   )
   .then(() => app.listen(5000))
   .then(() => console.log("Connected to database Listening to port 5000"));
